@@ -53,6 +53,58 @@ nav {
     border-radius: 12px;
     border: 2px solid #ad1457;
 }
+/* Image Grid - 3 Columns for clarity */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 wider columns instead of 6 skinny ones */
+    gap: 20px;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto 40px auto; /* Centering the grid */
+}
+
+/* Image Containers */
+.image-grid figure {
+    margin: 0;
+    background: white;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(248, 187, 208, 0.2);
+    border: 1px solid #fce4ec;
+}
+
+.image-grid img {
+    width: 100%;
+    height: 250px; /* Increased height for better detail */
+    object-fit: cover; /* Ensures images aren't squished */
+    border-radius: 10px;
+    display: block;
+}
+
+/* Captions */
+figcaption {
+    margin-top: 12px;
+    font-weight: 600;
+    color: #ad1457;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+/* Video Grid - 2x2 for better size */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.video-grid video {
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    background-color: #000;
+}
 
 /* Ensure responsiveness for mobile */
 @media (max-width: 768px) {
